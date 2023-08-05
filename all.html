@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <h1><center> Registration Form</center></h1>
+    <marquee><h4>Welcome to all :) This is the Self Registration page.</h4></marquee>
+    <link rel="stylesheet" href="all.css">
+    
+</head>
+<body>
+    <form action="https://formspree.io/f/xaygqjnk" method="post">
+        <label for="name">Name</label>
+        <input type="text" name="name" required>
+        <label for="email">email</label>
+        <input type="email" email="email" required>
+        <label for="Password">Password</label>
+        <input type="password" password="password" required>
+        <label for="phonenumber">Mobile Number</label>
+        <input type="number" number="number" required>
+        <label for="gender">Gender</label>
+        <select id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Others</option>
+        </select><br><br>
+        <label for="Zipcode">Zipcode</label>
+        <input type="number" name="Zipcode" required>
+        <label for="subject">Choose Your fav Subject</label>
+        <select name="subject" id="subject">
+            <optgroup label="CS">
+                <option value="java">java</option>
+                <option value="c">c</option>
+                <option value="python">Python</option>
+            </optgroup><br><br>
+            <input type="button" onclick="alert('hai')" value="click here"><br><br>
+            <h3> languages Known</h3>
+            <input type="checkbox" id="subject1" name="subject1" value="hindi">hindi
+            <input type="checkbox" id="subject2" name="subject2" value="Telugu">Telugu
+            <input type="checkbox" id="subject3" name="subject3" value="English">English
+        </select><br><br>
+        select your fav colour   <input type="color" id="favcolor" name="favcolor"><br><br>
+        Date of birth<input type="date" id="birthdaydate" name="birthdaydate"><br><br>
+      <input type="submit" name="Register" required>
+        <div id="submit">
+        </div>
+    </form>
+</body>
+</html>
